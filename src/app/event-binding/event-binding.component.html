@@ -1,0 +1,16 @@
+<p>event-binding works!</p>
+
+
+<button value="tv" (click)="onClick($event)">tv</button>
+<button value="fridge" (click)="onClick($event)">fridge</button>
+<button value="mobile" (click)="onClick($event)">mobile</button>
+
+<br><br><br>
+
+<input #id type="text" value="angular" name="abdullah" >
+
+<button (click)="getInput(id)">search here</button>
+
+<p>{{display}}</p>
+
+

@@ -1,0 +1,17 @@
+
+.heading1{
+    display: inline-block;
+    width:48%;
+    background-color: cadetblue;
+    border-radius: 10px;
+    text-align: left;
+    margin:2px 5px;
+    margin-bottom: 20px;
+
+}
+.heading1 h1{
+    text-align: center;
+
+    font-size: 20px;
+    color: crimson;
+}

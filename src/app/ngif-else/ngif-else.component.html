@@ -1,0 +1,16 @@
+<p>ngif-else works!</p>
+
+<button class="bn btn-danger" (click)="onClick()">create me</button>
+
+<div *ngIf="isvalid;then ifblock else elseblock">Hello how are you</div>
+
+<ng-template #ifblock>
+    <div>
+        this is ifblock
+    </div>
+</ng-template>
+<ng-template #elseblock>
+    <div>
+        this is elseblock
+    </div>
+</ng-template>

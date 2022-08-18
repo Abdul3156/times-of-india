@@ -1,0 +1,17 @@
+<p>ng-switch works!</p>
+
+<select name="" id="" (change)="select($event)">
+    <option value="tv">tv</option>
+    <option value="fridge">fridge</option>
+    <option value="car">car</option>
+    <option value="bike">bike</option>
+</select>
+
+<div [ngSwitch]="selectedproduct">
+    <h2 *ngSwitchDefault = "'please select'">please select product</h2>
+    <h2 *ngSwitchCase = "'tv'">tv</h2>
+    <h2 *ngSwitchCase = "'fridge'">fridge</h2>
+    <h2 *ngSwitchCase = "'car'">car</h2>
+    <h2 *ngSwitchCase = "'bike'">bike</h2>
+
+</div>

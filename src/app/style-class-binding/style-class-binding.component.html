@@ -1,0 +1,21 @@
+<div class="box" [style.margin]="isactive? mystyle : '10px'">
+Angular box1
+</div>
+
+<div class="box" [class.myclass]="myproperty">
+    Angular box2
+ </div>
+
+ <div class="box" [ngClass]="'class-1 class-2 class-3'">
+    Angular box3
+ </div>
+
+ <!-- /,,,,,,,,,,,OR........./// -->
+
+ <div class="box" [ngClass]="myclass">
+    Angular box4
+ </div>
+
+ <div class="box" [ngStyle]="mstyle">
+    Angular box5
+ </div>

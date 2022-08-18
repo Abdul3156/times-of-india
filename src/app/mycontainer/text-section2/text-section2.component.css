@@ -1,0 +1,16 @@
+.heading2{
+    display: inline-block;
+    float: right;
+    width: 48%;
+    background-color: cadetblue;
+    border-radius: 10px;
+    text-align: left;
+    margin:2px 5px;
+    margin-bottom: 120px;
+
+}
+.heading2 h1{
+    font-size: 20px;
+    color: darkkhaki;
+    text-align: center;
+}

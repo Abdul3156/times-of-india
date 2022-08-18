@@ -1,0 +1,16 @@
+.card{
+    display: inline-block;
+    margin: 5px 5px;
+    width: 22%;
+}
+.card-img-top{
+    width:100%;
+    height: 120px;
+}
+.alert{
+    display: flex;
+    
+}
+.btn{
+    margin-left: auto;
+}

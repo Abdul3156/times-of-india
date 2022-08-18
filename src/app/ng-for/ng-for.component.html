@@ -1,0 +1,30 @@
+<p>ng-for works!</p>
+
+<div class="container">
+    <div class="row">
+        <!-- <div class="col-12"> -->
+    <table>
+        <thead class="bg-primary">
+            <tr>
+                <th>S.no</th>
+                <th>product Image</th>
+                <th>product Name</th>
+                <th>product ID</th>
+                <th>product Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let item of products; index as i">
+                <td>{{i+1}}</td>
+                <td>proimage</td>
+                <td>{{item.name}}</td>
+                <td>{{item.id}}</td>
+                <td>{{item.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- </div>  -->
+</div>
+</div>
+
+

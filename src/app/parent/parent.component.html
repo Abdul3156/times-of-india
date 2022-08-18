@@ -1,0 +1,52 @@
+<div class="container text-center">
+    <h1 class=" bg-primary">
+        Buy Products
+    </h1>
+    <div class=" alert alert-light " *ngIf="onaddedproduct">
+        <strong  class="text-success"> {{onaddedproduct}} </strong> &nbsp; is selected
+        <button class=" btn btn-success ">Checkout</button>
+    </div>
+     
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <img class="card-img-top" src="../../assets/laptop.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">laptop</h5>
+                  <button class="btn btn-primary" (click)="onproductclick('laptop')">select </button>
+                </div>
+              </div>
+              <div class="card"> 
+                <img class="card-img-top" src="../../assets/mobile.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">mobile</h5>
+                  <button class="btn btn-primary" (click)="onproductclick('mobile')">select </button>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../../assets/fridge.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">fridge</h5>
+                  <button class="btn btn-primary" (click)="onproductclick('fridge')">select </button>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../../assets/washingmachine.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Washing Machine</h5>
+                  <button class="btn btn-primary" (click)="onproductclick('washing Machine')">select </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 bg-success text-center text-white py-4">
+                <h1 *ngIf="!productselected">
+                    please select Any Products
+                </h1>
+                <h1 *ngIf="productselected">{{selecteditem}}
+                    is selected
+                </h1>
+                <button class="btn" (click)="onaddevent()">Add To Cart</button>
+            </div>
+          </div>   
+          
+   
